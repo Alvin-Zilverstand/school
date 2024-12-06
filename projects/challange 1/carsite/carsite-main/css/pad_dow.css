@@ -1,0 +1,13 @@
+.pad-down-gallary { 
+    padding-top: 110px; /* Adjust the value as needed */ 
+} 
+.pad-down { 
+    padding-top: 50px; /* Adjust the value as needed */ 
+} 
+
+.pad-up-event {
+    padding-top: 00px;
+}
+.pad-down-event {
+    padding-bottom: 00px;
+}
