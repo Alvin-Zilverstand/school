@@ -1,0 +1,376 @@
+/* Algemene body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Change to column to accommodate the top bar */
+    background-color: #ffffff;
+}
+
+/* Top bar menu */
+.menu-bar {
+    width: 75%; /* Use 75% of the screen width on the first page */
+    background-color: #ffffff;
+    padding: 10px 0;
+
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of menu items */
+    justify-content: center; /* Center the menu items */
+    align-items: center;
+    position: absolute; /* Initially position in the middle */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease; /* Add transition for position and background color */
+    z-index: 1;
+}
+
+.menu-bar.top {
+    width: 100%; /* Use 100% of the screen width when at the top */
+    position: fixed; /* Fix the top bar to the top */
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    justify-content: space-around; /* Spread the menu items */
+    flex-wrap: nowrap; /* Ensure all items are in a single row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.menu-bar.dark {
+    background-color: #ff8c00; /* Darker background color when modal is open */
+}
+
+.menu-item {
+    background-color: #ff8c00;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    flex: 1 1 calc(33.333% - 10px); /* Allow 3 items per row with margin */
+    text-align: center; /* Center text inside the menu item */
+}
+
+.menu-bar.top .menu-item {
+    flex: none; /* Remove flex-grow to fit all items in a single row */
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* Productweergave in een grid */
+.product-display {
+    width: calc(100% - 20%); /* Adjust width to leave space for the cart */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    margin-top: 60px; /* Add margin to ensure it starts below the top bar */
+}
+
+.product-box {
+    width: 200px; /* Keep the width fixed */
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ff8c00; /* 2px dikke zwarte rand */
+    padding: 20px; /* Ruimte binnen de container */
+    }
+    
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+.product-box img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+/* Modaal venster */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Allow scrolling for larger content */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 7% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.close {
+    position: absolute;
+    top: 110px;
+    right: 455px;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    color: red;
+}
+
+#add-to-cart {
+    background-color: #F56E28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#add-to-cart:hover {
+    background-color: #F56E28;
+}
+
+/* Winkelwagen-icoon */
+.cart-icon {
+    display: none; /* Initially hide the cart icon */
+    position: fixed;
+    top: 80px; /* Move the cart icon down */
+    right: 10px; /* Adjust right position to make space for language switcher */
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-icon.visible {
+    display: block; /* Show the cart icon when the 'visible' class is added */
+}
+
+.cart-icon:hover {
+    background-color: #e65c00;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+/* Productstijl */
+.products {
+    display: flex;
+    gap: 20px;
+    margin: 50px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #e65c00;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-bar {
+        flex-wrap: nowrap; /* Ensure all items are in a single row */
+        width: 100%; /* Use full width for menu bar */
+        top: 0; /* Fix the menu bar to the top */
+        left: 0;
+        transform: translate(0, 0);
+        justify-content: flex-start; /* Align items to the start */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .menu-item {
+        flex: none; /* Remove flex-grow to fit all items in a single row */
+        margin: 5px; /* Add margin between items */
+        font-size: 1em; /* Adjust font size for better readability */
+    }
+
+    .product-display {
+        width: 100%; /* Use full width for product display */
+        margin-top: 120px; /* Increase margin to accommodate wrapped menu bar */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .product-box {
+        width: calc(50% - 20px); /* Two items per row */
+        margin: 10px; /* Add margin between items */
+    }
+
+    .cart {
+        width: 100%; /* Use full width for cart */
+        top: auto; /* Remove fixed position */
+        bottom: 0; /* Position at the bottom */
+        height: auto; /* Adjust height */
+        max-height: 50vh; /* Set a maximum height for the cart */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    }
+
+    .cart-icon {
+        top: 20px; /* Adjust position */
+        right: 20px; /* Adjust position */
+    }
+
+    .language-switcher {
+        bottom: 20px; /* Position at the bottom */
+        left: 20px; /* Position at the left */
+    }
+
+    .logo {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Set a maximum width */
+        padding: 20px; /* Adjust padding */
+        margin: 10px auto; /* Adjust margin */
+    }
+}
+
+/* Winkelmandje sectie */
+.cart {
+    display: none; /* Initially hide the cart */
+    width: 15%; /* Make the cart a bit smaller */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Increase margin to ensure it starts below the categories bar */
+    position: fixed; /* Fix the cart to the right side */
+    right: 0; /* Align the cart to the right */
+    top: 60px; /* Ensure it starts below the categories bar */
+    flex-direction: column; /* Ensure the content is arranged in a column */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    max-height: 80vh; /* Set a maximum height for the cart */
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart li {
+    padding: 10px 0; /* Space out the items */
+    border-bottom: 1px solid #ff8c00; /* Change this to the orange color */
+}
+
+
+.cart li {
+    margin-bottom: 10px;
+}
+
+.cart-item button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 2px solid #ff8c00; /* Change this to the orange color */
+}
+
+
+.cart-item button:hover {
+    background-color: #b71c1c;
+}
+
+#order-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide the button by default */
+    align-self: flex-end; /* Ensure the button is at the bottom */
+}
+
+#order-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.cart.visible {
+    display: flex; /* Show the cart when the 'visible' class is added */
+}
+
+.logo {
+    width: 100%;
+    padding: 60px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    transition: opacity 0.3s ease; /* Add transition for smooth hiding */
+}
+
+.logo.hidden {
+    opacity: 0; /* Hide the logo */
+    visibility: hidden; /* Ensure the logo is not clickable */
+}
+
+.language-switcher {
+    position: fixed;
+    bottom: 20px; /* Position at the bottom */
+    left: 20px; /* Position at the left */
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    z-index: 1100; /* Ensure it is above other elements */
+}
+
+.language-switcher:hover {
+    background-color: #e65c00;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellingen Overzicht</title>
+    <link rel="stylesheet" href="orders.css">
+</head>
+
+<body>
+    <h1>Bestellingen Overzicht</h1>
+    <div id="orders-container" class="orders-container">
+        <!-- Orders will be dynamically inserted here -->
+    </div>
+
+    <script>
+        function fetchOrders() {
+            fetch('get_orders.php')
+                .then(response => response.json())
+                .then(orders => {
+                    const ordersContainer = document.getElementById('orders-container');
+                    ordersContainer.innerHTML = ''; // Clear existing orders
+
+                    orders.forEach(order => {
+                        const orderElement = document.createElement('div');
+                        orderElement.classList.add('order');
+
+                        const orderNumber = document.createElement('h2');
+                        orderNumber.innerText = `Order ${order.order_number}`;
+                        orderElement.appendChild(orderNumber);
+
+                        const orderTime = document.createElement('p');
+                        orderTime.innerText = `Tijd: ${order.order_time}`;
+                        orderElement.appendChild(orderTime);
+
+                        const itemsList = document.createElement('ul');
+                        order.items.forEach(item => {
+                            const itemElement = document.createElement('li');
+                            itemElement.innerText = `${item.title} - €${item.price.toFixed(2)}`;
+                            itemsList.appendChild(itemElement);
+                        });
+                        orderElement.appendChild(itemsList);
+
+                        const totalPrice = document.createElement('p');
+                        totalPrice.innerText = `Totaal: €${Number(order.total_price).toFixed(2)}`;
+                        orderElement.appendChild(totalPrice);
+
+                        const completeCheckbox = document.createElement('input');
+                        completeCheckbox.type = 'checkbox';
+                        completeCheckbox.id = `complete-${order.order_number}`;
+                        completeCheckbox.addEventListener('change', () => completeOrder(order.order_number));
+                        const completeLabel = document.createElement('label');
+                        completeLabel.htmlFor = `complete-${order.order_number}`;
+                        completeLabel.innerText = 'Complete';
+                        orderElement.appendChild(completeCheckbox);
+                        orderElement.appendChild(completeLabel);
+
+                        ordersContainer.appendChild(orderElement);
+                    });
+                })
+                .catch(error => console.error('Error fetching orders:', error));
+        }
+
+        function completeOrder(orderNumber) {
+            fetch('complete_order.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ order_number: orderNumber })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    fetchOrders(); // Refresh the orders list
+                } else {
+                    alert('Failed to complete order');
+                }
+            })
+            .catch(error => console.error('Error completing order:', error));
+        }
+
+        // Fetch orders every 5 seconds
+        setInterval(fetchOrders, 5000);
+        fetchOrders(); // Initial fetch
+    </script>
+</body>
+
+</html>

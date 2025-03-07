@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het hoofdmenu van de Mees</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+
+    <!-- Logo -->
+    <img src="media/logo.png" alt="Logo" class="logo">
+
+    <!-- Top bar menu -->
+    <div class="menu-bar">
+        <div class="menu-item" onclick="showCategory('Broodjes')" data-translate="Broodjes">Broodjes</div>
+        <div class="menu-item" onclick="showCategory('Koude-Dranken')" data-translate="Koude Dranken">Koude Dranken</div>
+        <div class="menu-item" onclick="showCategory('Warme-Dranken')" data-translate="Warme Dranken">Warme Dranken</div>
+        <div class="menu-item" onclick="showCategory('Snacks')" data-translate="Snacks">Snacks</div>
+        <div class="menu-item" onclick="showCategory('Desserts')" data-translate="Desserts">Desserts</div>
+        <div class="menu-item" onclick="showCategory('Deals')" data-translate="Deals">Deals</div>
+        <div class="menu-item" onclick="showCategory('Soepen')" data-translate="Soepen">Soepen</div>
+        <div class="menu-item" onclick="showCategory('Salades')" data-translate="Salades">Salades</div>
+        <div class="menu-item" onclick="showCategory('Sausjes')" data-translate="Sausjes">Sausjes</div>
+        <div class="menu-item" onclick="showCategory('Yoghurt')" data-translate="Yoghurt">Yoghurt</div>
+        <div class="menu-item" onclick="showCategory('Snoep')" data-translate="Snoep">Snoep</div>
+        <div class="menu-item" onclick="showCategory('Overige')" data-translate="Overige">Overige</div>
+    </div>
+
+    <!-- Product display area -->
+    <div id="product-display" class="product-display">
+        <!-- Products will be inserted dynamically -->
+    </div>
+
+    <!-- Modal for item details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button id="add-to-cart" data-translate="Toevoegen aan winkelmandje">Toevoegen aan winkelmandje</button>
+        </div>
+    </div>
+
+    <!-- Cart section -->
+    <div id="cart" class="cart">
+        <h2 data-translate="Winkelmandje">Winkelmandje</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added here -->
+        </ul>
+        <p><span data-translate="Totaal">Totaal</span>: €<span id="total-price">0.00</span></p>
+
+        <a href="betalen.html" target="index.html">
+            <button id="order-button" data-translate="Bestellen">Bestellen</button>
+        </a>
+    </div>
+
+    <!-- Cart icon -->
+    <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count" class="cart-count">0</span> <!-- Aantal producten -->
+    </div>
+
+    <!-- Language switcher -->
+    <div id="language-switcher" class="language-switcher">EN</div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

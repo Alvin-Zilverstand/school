@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #F56E28;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #F56E28;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #F56E28;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
