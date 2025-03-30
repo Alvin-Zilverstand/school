@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preload" href="./style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./style.css"></noscript>
+    <script src="./pokemon.js" defer></script>
+    <script src="./search.js" defer></script>
+    <link rel="icon" href="./assets/pokeball.png" type="image/x-icon">
+  </head>
+  <body>
+    <main class="main">
+      <header class="header home">
+        <div class="container">
+          <div class="logo-wrapper">
+            <img src="./assets/pokeball.svg" alt="pokeball" />
+            <h1>Pokedex</h1>
+          </div>
+          <div class="search-wrapper">
+            <div class="search-wrap">
+              <img
+                src="./assets/search.svg"
+                alt="search icon"
+                class="search-icon"
+              />
+              <input
+                type="text"
+                class="search-input body3-fonts"
+                placeholder="Search"
+                id="search-input"
+              />
+              <img
+                src="./assets/cross.svg"
+                alt="cross icon"
+                class="search-close-icon"
+                id="search-close-icon"
+              />
+            </div>
+            <div class="sort-wrapper">
+              <div class="sort-wrap">
+                <img
+                  src="./assets/sorting.svg"
+                  alt="sorting"
+                  class="sort-icon"
+                  id="sort-icon"
+                />
+              </div>
+              <div class="filter-wrapper">
+                <p class="body2-fonts">Sort by:</p>
+                <div class="filter-wrap">
+                  <div>
+                    <input
+                      type="radio"
+                      id="number-asc"
+                      name="filters"
+                      value="number-asc"
+                      checked
+                    />
+                    <label for="number-asc" class="body3-fonts">Number (Lowest to Highest)</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="number-desc"
+                      name="filters"
+                      value="number-desc"
+                    />
+                    <label for="number-desc" class="body3-fonts">Number (Highest to Lowest)</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="name-asc"
+                      name="filters"
+                      value="name-asc"
+                    />
+                    <label for="name-asc" class="body3-fonts">Name (A-Z)</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      id="name-desc"
+                      name="filters"
+                      value="name-desc"
+                    />
+                    <label for="name-desc" class="body3-fonts">Name (Z-A)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actions-wrapper">
+            <button id="register-pokemon" class="action-button">Register Pokémon</button>
+            <button id="edit-pokemon" class="action-button">Edit Pokémon</button>
+            <button id="delete-pokemon" class="action-button">Delete Pokémon</button>
+          </div>
+        </div>
+      </header>
+      <section class="pokemon-list">
+        <div class="container">
+          <div class="list-wrapper">
+            <div class="list-item">
+              <div class="number-wrap">
+                <p class="caption-fonts">#${pokemon.id}</p>
+              </div>
+              <div class="img-wrap">
+                <img data-src-low="${pokemon.image_url_low}" data-src="${pokemon.image_url}" alt="${pokemon.name}" />
+              </div>
+              <div class="name-wrap">
+                <p class="body3-fonts">${pokemon.name}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="not-found-message">Pokemon not found</div>
+      </section>
+      <section class="competitors-list">
+        <div class="container">
+          <h2>
+            Competitors
+            <button id="toggle-competitors" class="toggle-button">Hide</button>
+          </h2>
+          <div class="list-wrapper collapsible" id="competitors-wrapper">
+            <!-- Competitors will be displayed here -->
+          </div>
+        </div>
+      </section>
+      <center>
+        <h4>jeremy heeft minder dan niks gedaan</h4>
+      </center>
+    </main>
+    <script src="./pokemon.js" defer></script>
+    <script src="./search.js" defer></script>
+    <script src="./actions.js" defer></script>
+  </body>
+</html>
