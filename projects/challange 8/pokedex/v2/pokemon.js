@@ -78,9 +78,21 @@
     }
   }
 
+  function preloadImages(pokemons) {
+    const head = document.querySelector("head");
+    pokemons.forEach((pokemon) => {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = pokemon.image_url;
+      head.appendChild(link);
+    });
+  }
+
   function displayPokemons(pokemons) {
     console.log("Displaying Pokémon data:", pokemons);
     listWrapper.innerHTML = "";
+    preloadImages(pokemons); // Preload images before displaying them
 
     pokemons.forEach((pokemon) => {
       const listItem = document.createElement("div");
