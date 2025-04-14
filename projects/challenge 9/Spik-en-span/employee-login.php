@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medewerker Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/favicon.ico" alt="Bootstrap" width="30" height="24">
+            Spik & Span
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                    Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="bestellen.html">
+                    Tickets Bestellen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">
+                    Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="over-ons.html">
+                    Over Ons
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="employee-login.php">
+                    Medewerkers
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Medewerker Login</h1>
+        <?php if (isset($_GET['error']) && $_GET['error'] === 'invalid_credentials'): ?>
+            <div class="alert alert-danger text-center" role="alert">
+                Ongeldige inloggegevens. Probeer het opnieuw.
+            </div>
+        <?php endif; ?>
+        <form id="loginForm" action="php/process_login.php" method="POST" class="mt-4">
+            <div class="mb-3">
+                <label for="username" class="form-label">Gebruikersnaam</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Wachtwoord</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Inloggen</button>
+        </form>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

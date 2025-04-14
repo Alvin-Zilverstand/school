@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1 class="text-center">QR Scanner</h1>
+        <a id="btn-scan-qr">
+            <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg" alt="QR Icon">
+        </a>
+        <video id="video" autoplay playsinline></video>
+        <canvas id="qr-canvas" hidden></canvas>
+        <div id="qr-result" hidden>
+            <b>Data:</b> <span id="outputData"></span>
+        </div>
+    </div>
+    <script src="qrCodeScanner.js"></script>
+</body>
+</html>
