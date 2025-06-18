@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Test</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            bg: '#0f172a',
+                            card: '#334155',
+                            text: '#f1f5f9'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="min-h-screen bg-gray-100 dark:bg-dark-bg text-gray-900 dark:text-white transition-colors duration-200">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8 text-center">Dark Mode Test Page</h1>
+        
+        <div class="max-w-md mx-auto bg-white dark:bg-dark-card p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Test Content</h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+                This is a test page to verify that the dark mode toggle button appears and works correctly.
+            </p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+                You should see a dark mode toggle button in the bottom-left corner of the screen.
+            </p>
+        </div>
+        
+        <div class="mt-8 text-center">
+            <a href="index.php" class="btn-primary inline-block">Back to Main Page</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/dark-mode.js"></script>
+    
+    <script>
+        // Additional debugging
+        console.log('Test page loaded');
+        setTimeout(() => {
+            const button = document.getElementById('theme-toggle');
+            if (button) {
+                console.log('✅ Dark mode button found:', button);
+                console.log('Button styles:', window.getComputedStyle(button));
+            } else {
+                console.log('❌ Dark mode button not found');
+            }
+        }, 1000);
+    </script>
+</body>
+</html> 

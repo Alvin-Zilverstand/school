@@ -1,0 +1,160 @@
+# Allow all well-behaved bots
+User-agent: *
+Disallow:
+
+# Block specific bots
+User-agent: AI2Bot
+Disallow: /db
+
+User-agent: Ai2Bot-Dolma
+Disallow: /db
+
+User-agent: aiHitBot
+Disallow: /db
+
+User-agent: Amazonbot
+Disallow: /db
+
+User-agent: anthropic-ai
+Disallow: /db
+
+User-agent: Applebot
+Disallow: /db
+
+User-agent: Applebot-Extended
+Disallow: /db
+
+User-agent: Brightbot 1.0
+Disallow: /db
+
+User-agent: Bytespider
+Disallow: /db
+
+User-agent: CCBot
+Disallow: /db
+
+User-agent: ChatGPT-User
+Disallow: /db
+
+User-agent: Claude-Web
+Disallow: /db
+
+User-agent: ClaudeBot
+Disallow: /db
+
+User-agent: cohere-ai
+Disallow: /db
+
+User-agent: cohere-training-data-crawler
+Disallow: /db
+
+User-agent: Cotoyogi
+Disallow: /db
+
+User-agent: Crawlspace
+Disallow: /db
+
+User-agent: Diffbot
+Disallow: /db
+
+User-agent: DuckAssistBot
+Disallow: /db
+
+User-agent: FacebookBot
+Disallow: /db
+
+User-agent: Factset_spyderbot
+Disallow: /db
+
+User-agent: FirecrawlAgent
+Disallow: /db
+
+User-agent: FriendlyCrawler
+Disallow: /db
+
+User-agent: GPTBot
+Disallow: /db
+
+User-agent: iaskspider/2.0
+Disallow: /db
+
+User-agent: ICC-Crawler
+Disallow: /db
+
+User-agent: ImagesiftBot
+Disallow: /db
+
+User-agent: img2dataset
+Disallow: /db
+
+User-agent: imgproxy
+Disallow: /db
+
+User-agent: ISSCyberRiskCrawler
+Disallow: /db
+
+User-agent: Kangaroo Bot
+Disallow: /db
+
+User-agent: Meta-ExternalAgent
+Disallow: /db
+
+User-agent: Meta-ExternalFetcher
+Disallow: /db
+
+User-agent: NovaAct
+Disallow: /db
+
+User-agent: OAI-SearchBot
+Disallow: /db
+
+User-agent: omgili
+Disallow: /db
+
+User-agent: omgilibot
+Disallow: /db
+
+User-agent: Operator
+Disallow: /db
+
+User-agent: PanguBot
+Disallow: /db
+
+User-agent: Perplexity-User
+Disallow: /db
+
+User-agent: PerplexityBot
+Disallow: /db
+
+User-agent: PetalBot
+Disallow: /db
+
+User-agent: Scrapy
+Disallow: /db
+
+User-agent: SemrushBot-OCOB
+Disallow: /db
+
+User-agent: SemrushBot-SWA
+Disallow: /db
+
+User-agent: Sidetrade indexer bot
+Disallow: /db
+
+User-agent: TikTokSpider
+Disallow: /db
+
+User-agent: Timpibot
+Disallow: /db
+
+User-agent: VelenPublicWebCrawler
+Disallow: /db
+
+User-agent: Webzio-Extended
+Disallow: /db
+
+User-agent: YouBot
+Disallow: /db
+
+# Sitemap location
+Sitemap: https://alvnx.xyz/sitemap.xml
