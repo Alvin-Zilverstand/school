@@ -3,8 +3,8 @@
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/k1tty/school?style=for-the-badge" alt="last commit"/>
-  <img src="https://img.shields.io/github/repo-size/k1tty/school?style=for-the-badge" alt="repo size"/>
+  <img src="https://img.shields.io/github/last-commit/Alvin-Zilverstand/school?style=for-the-badge" alt="last commit"/>
+  <img src="https://img.shields.io/github/repo-size/Alvin-Zilverstand/school?style=for-the-badge" alt="repo size"/>
 </p>
 
 > Welcome to my digital portfolio and learning playground! This repository is a living chronicle of my journey through the world of software development during my school years. Each project, big or small, represents a new challenge accepted and a new lesson learned.
