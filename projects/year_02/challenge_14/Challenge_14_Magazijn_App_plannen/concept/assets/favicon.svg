@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Vista College Color Palette: #FEFEFE, #CCCECF, #D3705A, #CD977E, #1F4952 -->
+
+    <!-- Main Building -->
+    <rect x="4" y="12" width="24" height="16" fill="#1F4952" rx="1"/>
+    
+    <!-- Roof with 3D effect -->
+    <path d="M2 12L16 4L30 12L16 8Z" fill="#D3705A"/>
+    
+    <!-- Main Door -->
+    <rect x="13" y="16" width="6" height="12" fill="#CD977E"/>
+    <circle cx="18" cy="22" r="0.5" fill="#FEFEFE"/>
+    
+    <!-- Windows -->
+    <rect x="7" y="15" width="3" height="3" fill="#CCCECF" rx="0.5"/>
+    <rect x="22" y="15" width="3" height="3" fill="#CCCECF" rx="0.5"/>
+    
+    <!-- Loading Dock -->
+    <rect x="11" y="27" width="10" height="1" fill="#CCCECF"/>
+    
+    <!-- Subtle Shadow -->
+    <rect x="4" y="28" width="24" height="0.5" fill="rgba(0,0,0,0.2)"/>
+</svg>
