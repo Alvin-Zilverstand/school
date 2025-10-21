@@ -1,5 +1,11 @@
 # Challenge 08: Pokédex Database Constructie
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project richt zich op de geautomatiseerde constructie van een Pokédex-database. Het maakt gebruik van een Node.js-script (`fetch_and_insert.js`) om uitgebreide Pokémon-gegevens op te halen van de officiële PokéAPI en deze te structureren in een lokale MySQL-database.
 
 ## Functionaliteit van `fetch_and_insert.js`
@@ -25,3 +31,7 @@ Het script automatiseert het proces van data-acquisitie en -opslag, waarbij de v
 ## Doel
 
 Dit project demonstreert een robuuste methode voor het programmatisch vullen van een relationele database met externe API-gegevens. Dit is een essentiële vaardigheid voor het bouwen van data-gedreven applicaties, zoals een Pokédex.
+
+---
+
+[View Project](./pokedex)

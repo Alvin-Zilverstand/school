@@ -1,5 +1,11 @@
 # Challenge 07: Schoolkantine Bestelsysteem
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project omvat de ontwikkeling van een bestelsysteem voor een schoolkantine, gericht op het efficiënt beheren van producten en bestellingen via een MySQL-database.
 
 ## Database Structuur en Inhoud
@@ -23,3 +29,7 @@ De kern van het systeem wordt gevormd door de `schoolkantine.sql` database, die 
 ## Doel
 
 Het systeem is ontworpen om een efficiënt en gebruiksvriendelijk bestelproces in de schoolkantine te faciliteren. Dit resulteert in een gestroomlijnde workflow, wat zowel studenten als kantinepersoneel ten goede komt.
+
+---
+
+[View Project](./Schoolkantine)

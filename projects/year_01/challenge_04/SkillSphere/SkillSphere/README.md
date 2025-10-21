@@ -1,119 +1,127 @@
-# Skill Exchange Platform for Software Development Students  
 
-This project is a modern social network platform designed to facilitate skill exchange among students studying Software Development (crebo 25604). The platform incorporates gamification elements, providing an engaging and interactive experience for users while meeting the standards outlined by SBB Nederland's qualification framework.
-
----
-
-## 🚀 Features  
-
-- **Skill Exchange:** Connect with peers to share and develop software development skills.  
-- **Gamification:** Earn badges, points, and rewards for participation and achievements.  
-- **User-Friendly Front-End:** Clean and intuitive UI for seamless navigation.  
-- **Robust Back-End:** Secure and scalable back-end architecture.  
-- **Structured Database:** Well-designed database schema to support efficient data management.  
+# Challenge 04: SkillSphere
 
 ---
 
-## 🛠️ Tech Stack  
-
-- **Front-End:** React.js / Angular / Vue.js (choose as per your group decision)  
-- **Back-End:** Node.js / Express / Django / Flask (choose as per your group decision)  
-- **Database:** MySQL / PostgreSQL / MongoDB  
-- **Version Control:** Git  
+[<-- Terug naar hoofd-README](../../../../../../README.md)
 
 ---
 
-## 📋 Requirements  
+# Vaardigheidsuitwisselingsplatform voor studenten Softwareontwikkeling
 
-- Node.js (latest stable version)  
-- Database of choice (MySQL, PostgreSQL, or MongoDB)  
-- Git  
+Dit project is een modern sociaal netwerkplatform dat is ontworpen om de uitwisseling van vaardigheden tussen studenten Softwareontwikkeling (crebo 25604) te vergemakkelijken. Het platform bevat gamificatie-elementen en biedt een boeiende en interactieve ervaring voor gebruikers, terwijl het voldoet aan de normen van het kwalificatiedossier van SBB Nederland.
 
 ---
 
-## 📂 Project Structure  
+## 🚀 Functies
+
+- **Vaardigheidsuitwisseling:** Maak contact met medestudenten om softwareontwikkelingsvaardigheden te delen en te ontwikkelen.
+- **Gamificatie:** Verdien badges, punten en beloningen voor deelname en prestaties.
+- **Gebruiksvriendelijke Front-End:** Schone en intuïtieve gebruikersinterface voor naadloze navigatie.
+- **Robuuste Back-End:** Veilige en schaalbare back-end architectuur.
+- **Gestructureerde Database:** Goed ontworpen databaseschema voor efficiënt gegevensbeheer.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Front-End:** React.js / Angular / Vue.js (kies op basis van groepsbeslissing)
+- **Back-End:** Node.js / Express / Django / Flask (kies op basis van groepsbeslissing)
+- **Database:** MySQL / PostgreSQL / MongoDB
+- **Versiebeheer:** Git
+
+---
+
+## 📋 Vereisten
+
+- Node.js (laatste stabiele versie)
+- Database naar keuze (MySQL, PostgreSQL of MongoDB)
+- Git
+
+---
+
+## 📂 Projectstructuur
 
 ```
-/frontend  
-  ├── public  
-  ├── src  
-      ├── components  
-      ├── pages  
-      ├── assets  
-/backend  
-  ├── models  
-  ├── routes  
-  ├── controllers  
-/database  
-  ├── migrations  
-  ├── seeders  
-```  
+/frontend
+  ├── public
+  ├── src
+      ├── components
+      ├── pages
+      ├── assets
+/backend
+  ├── models
+  ├── routes
+  ├── controllers
+/database
+  ├── migrations
+  ├── seeders
+```
 
 ---
 
-## 🎯 Objectives  
+## 🎯 Doelstellingen
 
-- Implement core functionalities based on the qualification dossier for Software Development (SBB Nederland).  
-- Create a fully functional skill exchange platform with gamified elements.  
-- Develop and test the application collaboratively within a group of up to four members.  
-
----
-
-## 📖 Getting Started  
-
-1. **Clone the repository**  
-   ```bash  
-   git clone https://github.com/your-username/skill-exchange-platform.git  
-   cd skill-exchange-platform  
-   ```  
-
-2. **Set up the front-end**  
-   ```bash  
-   cd frontend  
-   npm install  
-   npm start  
-   ```  
-
-3. **Set up the back-end**  
-   ```bash  
-   cd backend  
-   npm install  
-   npm run dev  
-   ```  
-
-4. **Configure the database**  
-   - Update your database credentials in `backend/config/db.js`.  
-   - Run migrations and seed data if applicable.  
+- Implementeer kernfunctionaliteiten op basis van het kwalificatiedossier voor Softwareontwikkeling (SBB Nederland).
+- Creëer een volledig functioneel vaardigheidsuitwisselingsplatform met gamified elementen.
+- Ontwikkel en test de applicatie gezamenlijk in een groep van maximaal vier leden.
 
 ---
 
-## 🎮 Gamification Details  
+## 📖 Aan de slag
 
-- **Achievements:** Unlock badges for specific milestones.  
-- **Leaderboards:** Compare skills and contributions with peers.  
-- **Challenges:** Weekly and monthly challenges to encourage engagement.  
+1. **Kloon de repository**
+   ```bash
+   git clone https://github.com/your-username/skill-exchange-platform.git
+   cd skill-exchange-platform
+   ```
+
+2. **Stel de front-end in**
+   ```bash
+   cd frontend
+   npm install
+   npm start
+   ```
+
+3. **Stel de back-end in**
+   ```bash
+   cd backend
+   npm install
+   npm run dev
+   ```
+
+4. **Configureer de database**
+   - Werk uw databasereferenties bij in `backend/config/db.js`.
+   - Voer migraties uit en seed data indien van toepassing.
 
 ---
 
-## 🤝 Collaboration  
+## 🎮 Gamificatie Details
 
-- Group size: 4 members.  
-- Communicate effectively and split tasks based on skill sets.  
-- Validate solutions using multiple sources and seek guidance when needed.  
-
----
-
-## 📚 Resources  
-
-- [SBB Nederland Qualification Framework](https://www.s-bb.nl/)  
-- [MDN Web Docs](https://developer.mozilla.org/)  
-- [Stack Overflow](https://stackoverflow.com/)  
+- **Prestaties:** Ontgrendel badges voor specifieke mijlpalen.
+- **Leaderboards:** Vergelijk vaardigheden en bijdragen met medestudenten.
+- **Uitdagingen:** Wekelijkse en maandelijkse uitdagingen om betrokkenheid te stimuleren.
 
 ---
 
-## 💡 Tips  
+## 🤝 Samenwerking
 
-- Research thoroughly and verify answers from multiple sources.  
-- Take advantage of your mentors' expertise when in doubt.  
-- Focus on both functionality and user experience.  
+- Groepsgrootte: 4 leden.
+- Communiceer effectief en verdeel taken op basis van vaardigheden.
+- Valideer oplossingen met behulp van meerdere bronnen en vraag om begeleiding wanneer dat nodig is.
 
+---
+
+## 📚 Bronnen
+
+- [SBB Nederland Kwalificatiedossier](https://www.s-bb.nl/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [Stack Overflow](https://stackoverflow.com/)
+
+---
+
+## 💡 Tips
+
+- Onderzoek grondig en verifieer antwoorden uit meerdere bronnen.
+- Maak gebruik van de expertise van uw mentoren bij twijfel.
+- Focus op zowel functionaliteit als gebruikerservaring.

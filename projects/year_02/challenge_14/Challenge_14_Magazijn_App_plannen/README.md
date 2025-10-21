@@ -1,4 +1,10 @@
-# Challenge 14: Magazijn App
+# Challenge 14: Magazijn App Plannen
+
+---
+
+[<-- Back to Main README](../../../../../README.md)
+
+---
 
 ## Over dit project
 

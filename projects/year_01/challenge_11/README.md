@@ -1,5 +1,11 @@
 # Challenge 11: CRM-module voor Autotuning Website
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project richt zich op de uitbreiding van een bestaande website voor een autotuningbedrijf. Het doel is het integreren van een op maat gemaakte Customer Relationship Management (CRM)-module om de klantcommunicatie te verbeteren en alle klantcontacten efficiënt vast te leggen.
 
 ## Projectdoelstellingen en Klantvereisten
@@ -22,3 +28,7 @@ De website en de nieuwe CRM-module zijn specifiek gericht op:
 ## Achtergrond
 
 De behoefteanalyse en vragenlijst (`ingevulde_behoefte_analyse.md`, `Vragenlijst_antwoorden.md`) benadrukken de noodzaak van een betere vastlegging van klantinteracties. Dit is cruciaal voor het optimaliseren van de service en het stroomlijnen van bedrijfsprocessen. Dit project draagt bij aan effectievere communicatie en een verbeterd klantrelatiebeheer voor het autotuningbedrijf.
+
+---
+
+[View Project](./portifolio(work_in_progress))

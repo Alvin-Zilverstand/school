@@ -1,5 +1,11 @@
 # Challenge 13: Messy Coder Verbeterd - Code Refactoring en Kwaliteitsverbetering
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project, getiteld "Messy-coder-Verbeterd", had als hoofddoel het refactoren en significant verbeteren van een bestaande codebase. Deze codebase, oorspronkelijk voor een portfolio website van "Lorenzo von Matterhorn", werd gekenmerkt als "rommelig".
 
 ## Projectdoelstellingen
@@ -16,3 +22,7 @@ De kern van deze challenge was het transformeren van een minder optimale codebas
 ## Achtergrond
 
 De portfolio website diende als een praktische casestudy. Het project bood de gelegenheid om vaardigheden in code-analyse, refactoringtechnieken en kwaliteitsborging te ontwikkelen, en benadrukte het belang van schone code en een goed gestructureerde applicatie voor duurzaam software-ontwikkeling.
+
+---
+
+[View Project](./Messy-coder-Verbeterd)

@@ -1,5 +1,11 @@
 # Challenge 14: Magazijn App Plannen - Gedetailleerd Ontwerp
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project omvat de gedetailleerde planning en het conceptuele ontwerp van een magazijn-app. Deze app is specifiek bedoeld voor het beheer van uitleenbare materialen aan studenten en docenten binnen een onderwijsinstelling. Het hoofddoel is het organiseren en stroomlijnen van het uitleenproces, om zo verlies te minimaliseren en het voorraadbeheer te optimaliseren.
 
 ## Belangrijkste Functionaliteiten van de App
@@ -66,3 +72,7 @@ De database is conceptueel ontworpen met de volgende entiteiten en hun onderling
 *   Een **Uitleen** kan één **Boete** hebben (indien het item te laat is ingeleverd).
 
 Dit gedetailleerde plan dient als blauwdruk voor de implementatie van de magazijn-app in toekomstige fases.
+
+---
+
+[View Project](./Challenge_14_Magazijn_App_plannen)

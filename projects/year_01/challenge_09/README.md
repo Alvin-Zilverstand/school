@@ -1,5 +1,11 @@
 # Challenge 09: Spik & Span Evenementenwebsite
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project betreft een website voor "Spik & Span", specifiek gericht op een evenement met een sterke carnavalsassociatie. De website onderscheidt zich door een dynamische video-achtergrond en een heldere navigatiestructuur.
 
 ## Belangrijkste Functionaliteiten en Pagina's
@@ -17,3 +23,7 @@ Dit project betreft een website voor "Spik & Span", specifiek gericht op een eve
 ## Doel
 
 De website fungeert als een centraal platform voor informatievoorziening en ticketverkoop voor het "Spik & Span"-evenement. De focus ligt op gebruiksgemak en een thematische presentatie die naadloos aansluit bij de carnavalsfeer.
+
+---
+
+[View Project](./Spik-en-span)

@@ -1,3 +1,4 @@
+
 # 🌟 My Coding Odyssey: A School Project Chronicle 🌟
 
 ---
@@ -11,15 +12,35 @@
 
 ---
 
-## 🚀 What's Inside?
+## 🚀 Challenges
 
-Here you'll find a collection of my "challenges," all neatly organized by year. Feel free to explore, get inspired, or even have a laugh at my early attempts at coding.
+Here you'll find a collection of my "challenges," all neatly organized by year.
 
-*   **`projects/year_01`**: My foundational year! This is where it all began. You'll find a variety of projects, including:
-    *   A Pokedex application 🐢
-    *   A car enthusiast website 🏎️
-    *   A cleaning service website ✨
-    *   And many more!
+<div align="center">
+
+### Year 1
+
+| Challenge | Description |
+| :--- | :--- |
+| [Challenge 01: Bricks](./projects/year_01/challenge_01/README.md) | My first challenge, "bricks". |
+| [Challenge 03: Car Site](./projects/year_01/challenge_03/README.md) | A website for car enthusiasts. |
+| [Challenge 04: SkillSphere](./projects/year_01/challenge_04/README.md) | A platform for sharing skills. |
+| [Challenge 05: Network Building](./projects/year_01/challenge_05/README.md) | A project about network infrastructure. |
+| [Challenge 07: School Canteen](./projects/year_01/challenge_07/README.md) | A database project for a school canteen. |
+| [Challenge 08: Pokedex](./projects/year_01/challenge_08/README.md) | A Pokedex application. |
+| [Challenge 09: Spik-en-span](./projects/year_01/challenge_09/README.md) | A website for a cleaning service. |
+| [Challenge 10: Photo Gallery](./projects/year_01/challenge_10/README.md) | A photo gallery project. |
+| [Challenge 11: Portfolio](./projects/year_01/challenge_11/README.md) | My personal portfolio website. |
+
+### Year 2
+
+| Challenge | Description |
+| :--- | :--- |
+| [Challenge 13: Messy Coder](./projects/year_02/challenge_13/README.md) | Refactoring and improving a messy codebase. |
+| [Challenge 14: Warehouse App Planning](./projects/year_02/challenge_14/README.md) | Planning a warehouse management application. |
+| [Challenge 15: Warehouse App Creation](./projects/year_02/challenge_15/README.md) | Creating the warehouse management application. |
+
+</div>
 
 ---
 

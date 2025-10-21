@@ -1,5 +1,11 @@
 # Challenge 03: Carsite - Car Meet Showcase
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project betreft een dynamische website, genaamd "CarMeet", specifiek ontworpen om autoliefhebbers te verbinden en evenementen te promoten. De website is volledig in het Nederlands en biedt een uitgebreide gebruikerservaring via diverse secties:
 
 ## Belangrijkste Functionaliteiten en Pagina's
@@ -15,3 +21,7 @@ Dit project betreft een dynamische website, genaamd "CarMeet", specifiek ontworp
 *   **Social Media Integratie:** Directe links naar platforms zoals Twitter, Instagram en TikTok om de autocultuur te volgen en actief deel te nemen.
 
 De website is gebouwd met moderne webtechnologieën, waaronder Bootstrap voor een responsief ontwerp, en bevat interactieve elementen zoals een scrollende galerij en accordions voor de FAQ. Het overkoepelende doel is het creëren van een levendige online hub voor de carmeet-gemeenschap.
+
+---
+
+[View Project](./carsite)

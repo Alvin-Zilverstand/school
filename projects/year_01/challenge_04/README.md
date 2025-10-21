@@ -1,5 +1,11 @@
 # Challenge 04: SkillSphere - Platform voor Vaardigheidsuitwisseling
 
+---
+
+[<-- Back to Main README](../../../../README.md)
+
+---
+
 Dit project, genaamd "SkillBuddy", is een modern sociaal netwerkplatform. Het is ontworpen om de uitwisseling van vaardigheden tussen studenten Software Development (crebo 25604) te faciliteren. Door de integratie van gamificatie-elementen biedt het platform een boeiende en interactieve leerervaring, geheel in lijn met de standaarden van het kwalificatiekader van SBB Nederland.
 
 ## Kernfunctionaliteiten
@@ -32,3 +38,7 @@ De gamificatie-elementen zijn ontworpen om betrokkenheid te maximaliseren:
 *   **Uitdagingen:** Wekelijkse en maandelijkse uitdagingen stimuleren continue betrokkenheid en ontwikkeling.
 
 De `index.html` fungeert als een aantrekkelijke landingspagina voor "SkillBuddy", met duidelijke opties om in te loggen en te registreren, waardoor de toegang tot dit interactieve leerplatform eenvoudig wordt gemaakt.
+
+---
+
+[View Project](./SkillSphere)
