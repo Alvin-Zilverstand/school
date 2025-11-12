@@ -1,2 +1,5 @@
 *.aup3
 *.wav
+node_modules/
+.env
+package.json
